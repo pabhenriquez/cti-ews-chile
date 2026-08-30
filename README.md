@@ -2,7 +2,7 @@
 
 Code and data to reproduce the machine-learning figures of the paper *"Deep
 learning detection of early warning signals for critical transitions in
-social systems using press data: Chile, 2014–2024"*.
+social systems: Chile, 2014–2024"*.
 
 The analyses operate on a Critical Transition Index (CTI) built from Chilean
 press data. Classifiers are trained on surrogate time series generated from
