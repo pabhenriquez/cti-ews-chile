@@ -1,0 +1,13 @@
+# Exact versions used to produce the published results (Python 3.11).
+# Pinned so that the environment can be rebuilt identically later.
+# If a wheel is unavailable for your Python version, setup_and_run.sh /
+# setup_and_run.bat automatically fall back to requirements-minimum.txt.
+numpy==2.4.4
+pandas==3.0.2
+python-igraph==1.0.0
+matplotlib==3.10.9
+pyarrow==25.0.1
+
+# Notebook environment
+jupyterlab==4.5.2
+ipykernel==7.3.0

@@ -19,6 +19,7 @@ maps interpret the SDML classifier decisions.
 data/         input CSV series (serie1.csv, serie2.csv, serie3.csv)
 pretrained/   pretrained multiclass classifier files
 src/          index-construction and figure-generation scripts
+networks/     semantic-network / giant-component analysis (own README)
 figures/      output PDFs (the published versions are included)
 output/       cached models and results (ignored by git)
 ```
@@ -53,6 +54,7 @@ need the pretrained classifier files in `pretrained/` (see
 | `python src/make_fig_class_2.py` | `figures/fig_class_2.pdf` |
 | `python src/make_gradcam.py --series 1` | `figures/gradcam_serie1.pdf` |
 | `Rscript src/make_cti_index.R` | `data/serie1.csv`, `serie2.csv`, `serie3.csv` |
+| `python networks/run_analysis.py` | `networks/figures/fig_networks_w200.pdf`, `fig_gc_robustness.pdf` |
 
 `--method` accepts `AAFT`, `IAAFT`, `FT`, or `RP` (surrogate-generation
 procedure). `make_cross_forecast.py` also accepts `--span` (lowess span,
@@ -67,3 +69,8 @@ The `figures/` directory ships the published versions of all PDFs.
 from the raw news corpus (`data/news.csv`, with columns `fecha`, `fuente`,
 `cuerpo_limpio`); the raw corpus itself is not distributed. It requires R
 with the packages listed at the top of the script.
+
+`networks/` contains the semantic-network and giant-component analysis
+(three period networks, threshold sweep, volume-matched resampling) with its
+own README, requirements, and published outputs; it also builds from the raw
+corpus, which is not distributed.

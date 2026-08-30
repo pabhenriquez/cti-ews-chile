@@ -1,0 +1,4 @@
+window,start,end,months,edges_kept,mass_filtered,mass_unfiltered
+Neutral,2015-10,2017-12,27,27059,4563533.0,9457465.0
+Pre-transition,2018-01,2020-03,27,37306,5526325.0,11614185.0
+Post-transition,2020-04,2022-06,27,58916,8155969.0,15198477.0

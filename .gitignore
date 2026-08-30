@@ -2,3 +2,8 @@ __pycache__/
 *.pyc
 .DS_Store
 output/
+networks/.venv/
+networks/data/news.csv*
+networks/data/*.parquet
+networks/data/*.npz
+networks/*.html

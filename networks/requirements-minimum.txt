@@ -1,0 +1,9 @@
+# Fallback: lower bounds instead of exact pins. Used automatically when the
+# pinned versions of requirements.txt have no wheel for your Python version.
+numpy>=1.26
+pandas>=2.0
+python-igraph>=0.10
+matplotlib>=3.7
+pyarrow>=12.0
+jupyterlab>=4.0
+ipykernel>=6.0
