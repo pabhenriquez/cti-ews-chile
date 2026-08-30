@@ -42,17 +42,17 @@ need the pretrained classifier files in `pretrained/` (see
 
 ## Usage
 
-| Script | Output | Approx. runtime |
-|---|---|---|
-| `python src/sdml_pipeline_weekly.py --method AAFT` | `figures/CNN_AAFT_weekly.pdf` | ~7 min |
-| `python src/make_svm_weekly.py --method AAFT` | `figures/SVM_AAFT_weekly.pdf` | ~10 min |
-| `python src/make_lstm_weekly.py --method AAFT` | `figures/LSTM_AAFT_weekly.pdf` | ~15 min |
-| `python src/make_cross_forecast.py --span 0.5` | `figures/cross_forecast_S1S2_weekly_span050.pdf` | ~6 min |
-| `python src/make_lowess_heatmap.py` | `figures/LOWESS_heatmap_DLprob.pdf` | ~40 min |
-| `python src/make_fig_class_1.py` | `figures/fig_class_1.pdf` | ~3 min |
-| `python src/make_fig_class_2.py` | `figures/fig_class_2.pdf` | ~3 min |
-| `python src/make_gradcam.py --series 1` | `figures/gradcam_serie1.pdf` | hours per series |
-| `Rscript src/make_cti_index.R` | `data/serie1.csv`, `serie2.csv`, `serie3.csv` | minutes |
+| Script | Output |
+|---|---|
+| `python src/sdml_pipeline_weekly.py --method AAFT` | `figures/CNN_AAFT_weekly.pdf` |
+| `python src/make_svm_weekly.py --method AAFT` | `figures/SVM_AAFT_weekly.pdf` |
+| `python src/make_lstm_weekly.py --method AAFT` | `figures/LSTM_AAFT_weekly.pdf` |
+| `python src/make_cross_forecast.py --span 0.5` | `figures/cross_forecast_S1S2_weekly_span050.pdf` |
+| `python src/make_lowess_heatmap.py` | `figures/LOWESS_heatmap_DLprob.pdf` |
+| `python src/make_fig_class_1.py` | `figures/fig_class_1.pdf` |
+| `python src/make_fig_class_2.py` | `figures/fig_class_2.pdf` |
+| `python src/make_gradcam.py --series 1` | `figures/gradcam_serie1.pdf` |
+| `Rscript src/make_cti_index.R` | `data/serie1.csv`, `serie2.csv`, `serie3.csv` |
 
 `--method` accepts `AAFT`, `IAAFT`, `FT`, or `RP` (surrogate-generation
 procedure). `make_cross_forecast.py` also accepts `--span` (lowess span,
